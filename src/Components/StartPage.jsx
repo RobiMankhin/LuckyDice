@@ -4,8 +4,8 @@ const StartPage = ({ toggle }) => {
       <div className=" h-80 mx-0 lg:h-96 mt-20 max-w-[1240px] flex md:flex-row flex-col justify-center gap-6 items-center ">
         <img
           className="w-[400px] lg:w-[500px]"
-          src="src/assets/dices.png"
-          alt="/"
+          src="/dices.png"
+          alt="Dice Game"
         />
         <div className="flex flex-col items-center md:items-end">
           <h1 className="font-bold text-6xl">Dice Game</h1>

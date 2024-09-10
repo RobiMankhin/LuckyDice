@@ -12,8 +12,8 @@ const RollDice = ({ currentDice, roll, score, setScore }) => {
         <div className="cursor-pointer" onClick={roll}>
           <img
             className="w-48 lg:w-56"
-            src={`src/assets/Img/dice_${currentDice}.png`}
-            alt=""
+            src={`public/Img/dice_${currentDice}.png`}
+            alt={`Dice ${currentDice}`}
           />
         </div>
         <h1 className="font-semibold">Click on Dice to Roll</h1>
