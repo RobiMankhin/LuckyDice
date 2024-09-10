@@ -44,7 +44,7 @@ const GamePlay = () => {
 
             <p className="font-semibold  text-red-700 mt-4">{error}</p>
           </div>
-          <div className="flex flex-col  items-center md:mr-10 ">
+          <div className="flex flex-col  items-center mr-2 md:mr-10 ">
             <p className="font-semibold text-lg md:text-xl text-center mb-3 mt-12">
               Select a number
             </p>
