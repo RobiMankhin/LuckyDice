@@ -37,36 +37,33 @@ const GamePlay = () => {
   return (
     <div className="w-full">
       <div className="max-w-[1280px] mx-auto relative  justify-between">
-        <div className="flex md:flex-row justify-between mr-6 mt-2">
-          <div className="ml-20 lg:ml-20 flex flex-col items-center">
-            <h1 className="font-semibold text-7xl">{score}</h1>
-            <p className="font-semibold text-2xl">Total Score</p>
+        <div className="flex  justify-between ">
+          <div className="ml-12 w-44 flex flex-col items-center">
+            <h1 className="font-semibold mt-2 text-4xl lg:text-7xl">{score}</h1>
+            <p className="font-semibold text-xl lg:text-2xl">Total Score</p>
+
+            <p className="font-semibold  text-red-700 mt-4">{error}</p>
           </div>
-          {
-            <p className="font-semibold text-red-800 md:text-xl mb-3 mt-6 md:mt-4">
-              {error}
+          <div className="flex flex-col  items-center md:mr-10 ">
+            <p className="font-semibold text-lg md:text-xl text-center mb-3 mt-12">
+              Select a number
             </p>
-          }
-          <div className="lg:flex ">
-            {
-              <p className="font-semibold md:text-xl mb-3 lg:mt-4">
-                Select a number
-              </p>
-            }
-            {arrValue.map((value, i) => (
-              <div
-                className="font-semibold text-3xl flex  items-center justify-center mt-1 ml-7 h-14 w-12 md:w-16 border-black border-[2px] hover:bg-neutral-400 rounded-md border-solid duration-300"
-                key={i}
-                onClick={() => errorMessage(value)}
-                style={
-                  select === value
-                    ? { backgroundColor: "black", color: "white" }
-                    : { backgroundColor: "" }
-                }
-              >
-                {value}
-              </div>
-            ))}
+            <div className="flex flex-col md:flex-row gap-1 lg:flex-col  ">
+              {arrValue.map((value, i) => (
+                <div
+                  className="font-semibold text-3xl flex  items-center justify-center mt-1 h-14 w-12 md:w-16 border-black border-[2px] hover:bg-neutral-400 rounded-md border-solid duration-300"
+                  key={i}
+                  onClick={() => errorMessage(value)}
+                  style={
+                    select === value
+                      ? { backgroundColor: "black", color: "white" }
+                      : { backgroundColor: "" }
+                  }
+                >
+                  {value}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className=" absolute top-36 lg:top-28 left-2 lg:left-96 lg:right-96">
