@@ -8,7 +8,7 @@ const StartPage = ({ toggle }) => {
           alt="Dice Game"
         />
         <div className="flex flex-col items-center md:items-end">
-          <h1 className="font-bold text-6xl">Dice Game</h1>
+          <h1 className="font-bold text-6xl">Fortune Roll</h1>
           <button
             onClick={toggle}
             className="bg-black hover:bg-white hover:text-black border-2 transition-all duration-300 hover:border-black rounded-lg  text-white font-bold px-10 py-[4px] mt-5"
